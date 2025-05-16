@@ -4,6 +4,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <div className="bg-green-500 text-white text-center py-2">Tailwind CSS is working!</div>
       {/* Hero Section */}
       <section className="section bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
         <div className="container">
