@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize smooth scrolling for anchor links
     initSmoothScroll();
     
-    // Initialize lazy loading for images
-    initLazyLoading();
-    
     // Initialize scroll progress
     initScrollProgress();
 });
@@ -79,22 +76,6 @@ function initSmoothScroll() {
             });
         });
     });
-}
-
-// Lazy Loading Images
-function initLazyLoading() {
-    if ('loading' in HTMLImageElement.prototype) {
-        // Browser supports native lazy loading
-        const images = document.querySelectorAll('img[loading="lazy"]');
-        images.forEach(img => {
-            img.src = img.dataset.src;
-        });
-    } else {
-        // Fallback for browsers that don't support lazy loading
-        const script = document.createElement('script');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-        document.body.appendChild(script);
-    }
 }
 
 // Intersection Observer for fade-in animations
