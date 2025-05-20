@@ -448,7 +448,7 @@ body {
 .homepage-hero-image-full img {
     width: 100vw;
     max-width: 100vw;
-    max-height: 702px;
+    max-height: 480px;
     height: auto;
     display: block;
     object-fit: cover;
