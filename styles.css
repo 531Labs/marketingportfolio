@@ -356,6 +356,24 @@ body {
     color: #888;
 }
 
+.portfolio-detail.centered {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #f5f5f5;
+    border-radius: 24px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.04);
+}
+@media (max-width: 900px) {
+    .portfolio-detail.centered {
+        max-width: 98vw;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1.5rem 0;
+    }
+}
+
 @media (max-width: 900px) {
     .editorial-features {
         flex-direction: column;
