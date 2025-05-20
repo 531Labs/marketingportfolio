@@ -427,12 +427,12 @@ body {
 .hero-title.mega-bold {
     color: var(--primary);
     font-size: clamp(3rem, 12vw, 8rem);
-    font-family: 'Anton', 'Montserrat', Arial, sans-serif;
-    font-weight: 900;
-    letter-spacing: -0.04em;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0;
     text-align: center;
+    letter-spacing: normal;
 }
 .homepage-hero-image-full {
     width: 100vw;
