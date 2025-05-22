@@ -20,7 +20,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio
 // Routes (we'll add these next)
 app.use('/api/projects', require('./routes/projects'));
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/pages', require('./routes/pages'));
+// const pagesRouter = require('./routes/pages');
+// app.use('/api/pages', pagesRouter);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
