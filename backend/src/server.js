@@ -23,6 +23,10 @@ app.use('/api/auth', require('./routes/auth'));
 // const pagesRouter = require('./routes/pages');
 // app.use('/api/pages', pagesRouter);
 
+app.get('/test', (req, res) => {
+  res.json({ message: 'Test route works!' });
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);

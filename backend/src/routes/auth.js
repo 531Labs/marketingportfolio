@@ -96,4 +96,9 @@ router.get('/me', auth, async (req, res) => {
   }
 });
 
+// Add a GET /login route for testing
+router.get('/login', (req, res) => {
+  res.json({ message: 'GET /login route works!' });
+});
+
 module.exports = router; 
